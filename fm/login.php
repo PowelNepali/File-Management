@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
                     } elseif ($row['user_type'] == 'user') {
                         $_SESSION['user_name'] = $row['name'];
                         $_SESSION['id'] = $row['id'];
-                        header('location: downloads.php');
+                        header('location: user_home.php');
                     } elseif ($row['user_type'] == 'teacher') {
                         $_SESSION['teacher_name'] = $row['name'];
                         header('location: teacher_page.php');

@@ -7,6 +7,7 @@ if (!is_dir('uploads')) {
 }
 
 if (isset($_POST['upload'])) {
+    $depart = $_POST['depart'];
     $file = $_FILES['myfile'];
 
     $filename = $file['name'];
@@ -27,7 +28,7 @@ if (isset($_POST['upload'])) {
 
                 if (move_uploaded_file($fileTmpName, $destination)) {
                     // File uploaded successfully; insert record into the database
-                    $sql = "INSERT INTO files (name, size, downloads) VALUES ('$uniqueFileName', $fileSize, 0)";
+                    $sql = "INSERT INTO files (name, size,department, downloads) VALUES ('$uniqueFileName', $fileSize,'$depart', 0)";
                     if (mysqli_query($conn, $sql)) {
                         echo "File uploaded successfully.";
                     } else {

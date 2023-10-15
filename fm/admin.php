@@ -21,11 +21,11 @@
         </tr>
     </table>
         <div class="add-button">
-            <a href="index.php">Upload PDF</a>
+            <a href="pdf.php">Upload PDF</a>
         </div>
 
         <div class="add-button">
-            <a href="uploadimg.php">Upload Image</a>
+            <a href="newimage.php">Upload Image</a>
         </div>
         
         <div class="add-button">

@@ -12,7 +12,8 @@
         <h1>Admin Panel</h1>
         <a href="uploadimg.php">Back</a>
     </header>
-</body></html>
+</body>
+</html>
 
 
 <?php

@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" type="text/css" href="css/downloads.css">
     <title>Download Files</title>
 </head>
 <body>
@@ -11,7 +11,7 @@
             <th>ID</th>
             <th>Filename</th>
             <th>Size (in KB)</th>
-            <th>Downloads</th>
+            <th>Department</th>
             <th>Action</th>
         </thead>
         <tbody>
@@ -32,7 +32,7 @@
                 <td><?php echo $id; ?></td>
                 <td><?php echo $filename; ?></td>
                 <td><?php echo $size; ?></td>
-                <td><?php echo $downloads; ?></td>
+                <td><?php echo $file['department']; ?></td>
                 <td><a href="download.php?id=<?php echo $id; ?>">Download</a></td>
             </tr>
         <?php
